@@ -4,5 +4,8 @@
 
 /.vs
 /WebApplication2/obj
+/WebApplication2/bin
 *.user
 /WebApplication2/.vs/WebApplication2
+/WebApplication2.Test/bin/Debug/net6.0
+/WebApplication2.Test/obj
