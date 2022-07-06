@@ -29,5 +29,14 @@ namespace WebApplication2.Controllers
             })
             .ToArray();
         }
+
+        [Route("/add")]
+        [HttpGet]
+        public int Add(int x, int y)
+        {
+              _logger.LogInformation("x = " + x + " y = " + y);
+              int z = x + y;
+              return z; 
+        } 
     }
 }
