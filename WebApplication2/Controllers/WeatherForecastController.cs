@@ -37,6 +37,28 @@ namespace WebApplication2.Controllers
               _logger.LogInformation("x = " + x + " y = " + y);
               int z = x + y;
               return z; 
-        } 
+        }
+
+        /// <summary>
+        /// Returns the first element of array
+        /// </summary>
+        /// <param name="a"></param>
+        /// <returns></returns>
+        [Route("/FirstElement")]
+        [HttpGet]
+        public int FirstElement([FromQuery] int[] a)
+        {
+            _logger.LogInformation("Received an array having Length=" + a.Length);
+            return a[0];
+        }
+
+        [Route("/product")]
+        [HttpGet]
+        public int Product(int x, int y, int z)
+        {
+            _logger.LogInformation("x = " + x + " y = " + y + " z = " + z);
+            int r = x * y *z;
+            return r;
+        }
     }
 }
