@@ -60,5 +60,8 @@ namespace WebApplication2.Controllers
             int r = x * y *z;
             return r;
         }
+
+       
+        
     }
 }
